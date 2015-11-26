@@ -1,4 +1,12 @@
 <!doctype html>
+<html lang=""><head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+</head>
 <html>
 <head>
 <title>ParallecScrolling</title>
@@ -31,38 +39,22 @@
 
 </script>
 </head>
-<!--
-<script type="text/javascript">
- var imlocation = "img/";
- var currentdate = 0;
- var image_number = 0;
- function ImageArray (n) {
-   this.length = n;
-   for (var i =1; i <= n; i++) {
-     this[i] = ' '
-   }
- }
- image = new ImageArray(6)
- image[0] = 'bg.jpg'
- image[1] = 'bg2.jpg'
- image[2] = 'bg3.gif'
- image[3] = 'bg4.gif'
- image[4] = 'bg5.gif'
- image[5] = 'bg6.gif'
-
- var rand = 60/image.length
- function randomimage() {
- 	currentdate = new Date()
- 	image_number = currentdate.getSeconds()
- 	image_number = Math.floor(image_number/rand)
- 	return(image[image_number])
- }
- document.write("<img src='" + imlocation + randomimage()+ "'>");
-</script>
--->
 <body>
 <img id="image" src="img/bg.jpg" height="710px" width="100%" />
-<div id="content"></div>
+<div id="content">
+	<div id="cssmenu">
+<ul>
+   <li class="active"><a href="#"><span>Home</span></a></li>
+   <li><a href="#"><span>Products</span></a></li>
+   <li><a href="#"><span>Company</span></a></li>
+   <li class="last"><a href="#"><span>Contact</span></a></li>
+</ul>
+</div>
+</body>
+<font size="5"  color="#ff6600"> This is some text!</font>
+</div>
+
+
 
 
 </body>
