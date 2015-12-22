@@ -1,0 +1,49 @@
+
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="jquery-2.1.4.min"></script>
+
+</head>
+<!-- p(t) = 1/2at^2 + v0t -->
+<body>
+
+  <div id="myDiv" style="width: 480px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <!-- default values are: 480px width and height 400px -->
+  <script>
+  var a = 10;
+  var b = 15;
+  var c = 13;
+  var d = 17;
+  var trace1 = {
+    x: [1, 2, 3, 4],
+    y: [a, b, c, d],
+    type: 'scatter'
+  };
+  var trace2 = {
+    x: [1, 2, 3, 4],
+    y: [16, 5, 11, 9],
+    type: 'scatter'
+  };
+  var data = [trace1, trace2];
+  Plotly.newPlot('myDiv', data);
+  </script>
+  <script>
+    $(document).ready(function()
+    {
+      $('myDiv').on('click', function()
+      {
+        $('myDiv').slideToggle(200);
+      });
+      $('myDiv').css(
+        {
+          color:'red'
+        });
+    });
+
+    </script>
+<!-- input -->
+
+<!-- end of input -->
+</body>
