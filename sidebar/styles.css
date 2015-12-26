@@ -13,12 +13,9 @@ body {
 }
 #menuwrapper{position:fixed;left:0;top:0;bottom:0;}
 #sidemenu{
-    height:100%;
-}
-#sidemenu{
 	background:#272727;
     width:110px;
-    height:250px;
+    height:100%;
 }
 /* We apply background color and border bottom white and width to 150px */
 #menuwrapper ul li{
