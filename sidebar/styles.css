@@ -11,7 +11,10 @@ body {
     padding:0;
     list-style:none;
 }
-
+#menuwrapper{position:fixed;left:0;top:0;bottom:0;}
+#sidemenu{
+    height:100%;
+}
 #sidemenu{
 	background:#272727;
     width:110px;
@@ -28,7 +31,7 @@ body {
 /* We apply the background hover color when user hover the mouse over of the li component */
 #menuwrapper ul li:hover{
     /*position:relative;*/
-    
+
 }
 
 /* We apply the link style */
@@ -41,7 +44,7 @@ body {
 }
 
 #menuwrapper ul li a.selected{
- 	color:#ddd;   
+ 	color:#ddd;
 }
 #menuwrapper ul li a:hover{
 	color:#3F68DE;
@@ -86,7 +89,7 @@ body {
     background-color:transaprent;
     width:0px;
     color:#fff;
-    
+
 }
 
 #menuwrapper ul li ul li{
@@ -107,5 +110,5 @@ body {
     -o-transition:background-color 0.5s ease;
     -webkit-transition:background-color 0.5s ease;
     -moz-transition:background-color 0.5s ease;
-    
+
 }
