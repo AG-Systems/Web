@@ -1,0 +1,233 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.profile-tweets li:before,
+.profile-tweets li:after {
+  content: " ";
+  display: table;
+}
+
+.profile-tweets li:after {
+  clear: both;
+}
+
+html {
+  background: #252527;
+  height: 100%;
+}
+
+.wrapper {
+  background: #242328;
+  box-shadow: 0 0 0.5em black;
+  height: 45em;
+  margin: 0 auto;
+  max-width: 25em;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+header {
+  background: #1C1B20;
+  border-bottom: 0.2em solid #131316;
+  box-shadow: 0 0.1em 0.2em rgba(17, 17, 17, 0.5);
+  height: 4em;
+  width: 100%;
+}
+header .btn {
+  display: block;
+  height: 100%;
+  width: 20%;
+}
+header .btn_left {
+  border-right: 0.1em solid #131316;
+  float: left;
+  padding: 0.8em 0;
+}
+header .btn_left span {
+  background: #05d5fc;
+  box-shadow: 0 0 0.4em #05d5fc;
+  display: block;
+  height: 0.25em;
+  margin: 0.35em auto;
+  width: 50%;
+}
+header .btn_right {
+  border-left: 0.1em solid #29272e;
+  float: right;
+  padding: 1em 1.5em;
+}
+header .btn_right i {
+  color: #05d5fc;
+  font-size: 2em;
+  text-shadow: 0 0 0.4em #05d5fc;
+}
+header .title {
+  border-left: 0.1em solid #29272e;
+  border-right: 0.1em solid #131316;
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+header .title h1 {
+  color: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0.8em;
+  text-align: center;
+  text-shadow: 0.05em 0.05em 0.05em rgba(34, 34, 34, 0.4), -0.05em -0.05em 0.05em rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+}
+
+.banner {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/twitter-bg_1.jpg);
+  background-size: cover;
+  border-bottom: 0.2em solid #131316;
+  box-shadow: inset 0 -0.1em 0.2em rgba(17, 17, 17, 0.5);
+  height: 10.5em;
+  padding: 1.5em 0;
+  width: 100%;
+}
+.banner .avatar-container {
+  background: linear-gradient(45deg, #05d5fc, #02accc);
+  border-radius: 0.2em;
+  box-shadow: 0 0 0.3em #05d5fc, 0 -0.2em 0.5em rgba(34, 34, 34, 0.5);
+  margin: 0 auto;
+  position: relative;
+  width: 8em;
+}
+.banner .avatar-container i {
+  color: #fff;
+  bottom: 1em;
+  position: absolute;
+  right: 1em;
+  text-shadow: 0 0 0.3em rgba(250, 250, 250, 0.4);
+}
+.banner .avatar {
+  border: 0.5em solid #222;
+  margin: 2.5% 2.5% 1%;
+  width: 95%;
+}
+
+.profile-info {
+  background: #121215;
+  box-shadow: 0 -2em 0 #1c1b20, 0 -2.2em 0 #131316, inset 0 -0.1em 0.2em rgba(17, 17, 17, 0.8), inset 0 0.1em 0.2em rgba(17, 17, 17, 0.8);
+  border-bottom: 0.075em solid #015767;
+  border-top: 0.075em solid #015767;
+  width: 100%;
+}
+.profile-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.profile-info li {
+  color: #ccc;
+  display: inline-block;
+  margin: 3% 0;
+  padding: 0 5%;
+  text-shadow: 0.05em 0.05em 0.05em rgba(34, 34, 34, 0.4), -0.05em -0.05em 0.05em rgba(250, 250, 250, 0.4);
+}
+.profile-info li:nth-child(1), .profile-info li:nth-child(2) {
+  border-right: 0.1em solid #222;
+}
+.profile-info li span {
+  color: #02accc;
+  display: block;
+  font-size: 130%;
+}
+
+.profile-tweets .title {
+  color: #fafafa;
+}
+.profile-tweets ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.profile-tweets li {
+  border-bottom: 0.1em solid #29272e;
+  border-top: 0.1em solid #131316;
+  padding: 0.5em;
+}
+.profile-tweets .avatar {
+  border-radius: 0.2em;
+  border: 0.1em solid #02accc;
+  float: left;
+  width: 12.5%;
+}
+.profile-tweets .tweet-content {
+  float: left;
+  margin: 0;
+  margin-left: 3%;
+  width: 80%;
+}
+.profile-tweets .tweet-content p {
+  color: #ccc;
+  font-size: 0.75em;
+  margin: 0;
+}
+.profile-tweets .tweet-content p a {
+  color: #02accc;
+  cursor: pointer;
+  text-decoration: none;
+}
+.profile-tweets .tweet-user {
+  color: #fafafa;
+  float: right;
+  font-size: 0.95em;
+  font-weight: 400;
+  margin: 0 0 0.3em;
+  width: 100%;
+}
+.profile-tweets .tweet-user span {
+  color: #6b677a;
+  font-size: 75%;
+}
+.profile-tweets .tweet-handle:after {
+  content: " - ";
+}
+
+.compose-tweet {
+  background: #242328;
+  box-shadow: -0.5em 0 0.5em rgba(17, 17, 17, 0.8);
+  left: 103%;
+  height: 100%;
+  padding: 1em;
+  position: absolute;
+  top: 19em;
+  transition: 1s;
+  width: 100%;
+  z-index: 99;
+}
+.compose-tweet h3 {
+  color: #fafafa;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.compose-tweet textarea {
+  background: #121215;
+  box-shadow: inset 0 -0.1em 0.2em rgba(17, 17, 17, 0.8), inset 0 0.1em 0.2em rgba(17, 17, 17, 0.8);
+  width: 100%;
+}
+.compose-tweet input[type=submit] {
+  background: none;
+  border: 0.2em solid #05d5fc;
+  border-radius: 0.2em;
+  color: #05d5fc;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+.compose-tweet input[type=submit]:active {
+  background: #02accc;
+  color: #121215;
+}
+
+.open {
+  left: 0;
+}
