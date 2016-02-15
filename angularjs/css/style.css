@@ -636,3 +636,8 @@ header .title h1 {
 .open {
     left: 0;
 }
+#tweeting
+{
+    width: 100%;
+    height: 300px; 
+}
