@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Eve Online Market Place</title>
+    <title>Eve Market</title>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
     <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen" />
     <link href="css/styles.css" rel="stylesheet" media="screen" />
@@ -16,10 +16,10 @@
 <body data-ng-app="listingApp">
     <section data-ng-controller="listingCtrl">
         <div class="page-header">
-            <h1>{{title}} <small>defined in the controller $scope</small></h1>
+            <h1>{{title}} <small>Welcome</small></h1>
         </div>
         <div class="controls">
-            <input type="text" data-ng-model="filters.query" placeholder="search news" />
+            <input type="text" data-ng-model="filters.query" placeholder="search market" />
             <label for="sortBy">Sort by</label>
             <select id="sortBy" data-ng-model="descending">
                 <option value="true">Newest first</option>
@@ -47,3 +47,20 @@
     </section>
 </body>
 </html>
+
+
+<!--
+template for json
+
+{
+    "title": "Hello parker",
+    "description": "Feel free to play around.",
+    "pubDate": "2015-03-01",
+    "tags": [
+          "tag2",
+          "tag3",
+          "tag1"
+    ]
+}
+
+-->
