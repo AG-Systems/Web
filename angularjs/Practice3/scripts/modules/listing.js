@@ -42,5 +42,5 @@
     $scope.dataFromRoot = $rootScope.testValue;
 }])
 .run(['$rootScope', function ($rootScope) {
-    $rootScope.testValue = "I am in rootScope";
+    $rootScope.testValue = "Practiced by meepo";
 }]);
