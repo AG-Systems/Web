@@ -16,23 +16,23 @@
         query: "",
         tags: [
             {
-                label: "tag1",
+                label: "Market",
                 selected: false
             },
             {
-                label: "tag2",
+                label: "Jobs",
                 selected: false
             },
             {
-                label: "tag3",
+                label: "Corps",
                 selected: false
             },
             {
-                label: "tag4",
+                label: "PVP",
                 selected: false
             },
             {
-                label: "tag5",
+                label: "Other",
                 selected: false
             }
         ]
