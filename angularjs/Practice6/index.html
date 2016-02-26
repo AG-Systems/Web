@@ -13,6 +13,12 @@
     <script src="scripts/modules/listing.js"></script>
     <script src="scripts/myApp.js"></script>
 </head>
+<nav class="{{active}}" ng-click="$event.preventDefault()">
+  <a href="#" class="home" ng-click="active='home'">Home</a>
+  <a href="#" class="projects" ng-click="active='projects'">Projects</a>
+  <a href="#" class="services" ng-click="active='services'">Services</a>
+  <a href="#" class="contact" ng-click="active='contact'">Contact</a>
+</nav>
 <body>
 <body data-ng-app="listingApp">
     <section data-ng-controller="listingCtrl">
