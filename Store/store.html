@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Eve Market</title>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen" />
+    <link href="css/styles.css" rel="stylesheet" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="scripts/services/listingServices.js"></script>
+    <script src="scripts/filters/listingFilters.js"></script>
+    <script src="scripts/modules/listing.js"></script>
+    <script src="scripts/myApp.js"></script>
+</head>
+<nav class="{{active}}" ng-click="$event.preventDefault()">
+  <a href="#" class="home" ng-click="active='home'">Home</a>
+  <a href="#/about" class="projects" ng-click="active='projects'">About</a>
+  <a href="#" class="services" ng-click="active='services'">Contact</a>
+  <a href="#" class="contact" ng-click="active='contact'">Other</a>
+</nav>
+<body>
+<body data-ng-app="listingApp">
+    <section data-ng-controller="listingCtrl">
+        <div class="page-header">
+            <h1>{{title}} <small>Welcome</small></h1>
+        </div>
+        <input type="text" data-ng-model="filters.query" placeholder="search market" />
+        <div id="showBt"> Options
+        </div>
+        <div class="controls">
+            <!-- <input type="text" data-ng-model="filters.query" placeholder="search market" /> -->
+            <label for="sortBy">Sort by</label>
+            <select id="sortBy" data-ng-model="descending">
+                <option value="true">Newest first</option>
+                <option value="false">Oldest first</option>
+            </select>
+            <div class="clear">
+                <div data-ng-repeat="tag in filters.tags" class="checkbox">
+                    <label for="{{tag.label}}">{{tag.label}}</label>
+                    <input id="{{tag.label}}" type="checkbox" data-ng-model="tag.selected" />
+                </div>
+            </div>
+        </div>
+        <p class="clear">{{filtered.length}} articles of {{articles.length}} match your search.</p>
+        <br>
+        <ul class="clear">
+            <li data-ng-repeat="article in filtered = (articles | newsFilter: filters) | orderBy:'pubDate':descending | limitTo: viewLimit">
+                <h2>{{article.title}}</h2>
+                <p>{{article.pubDate | date:'dd/MM/yy'}}</p>
+                <p>{{article.description}}</p>
+            </li>
+        </ul>
+        <button class="btn" data-ng-click="viewMore(8)" data-ng-hide="viewLimit >= filtered.length">view more</button>
+    </section>
+    <section data-ng-controller="testCtrl">
+        <!-- <h2>{{dataFromRoot}}</h2> -->
+    </section>
+</body>
+</body>
+</html>
+
+
+<script>
+$('.controls').hide();
+$("#showBt").click(function ()
+{
+  $('.controls').toggle("slide");
+});
+</script>
+<!--
+Hello micheal.
+-->
+
+
+<!--
+template for articles
+
+{
+    "title": "",
+    "description": "",
+    "pubDate": "2015-03-01",
+    "tags": [
+          "tag2",
+          "tag3",
+          "tag1"
+    ]
+}
+
+-->
