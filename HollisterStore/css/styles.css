@@ -414,3 +414,10 @@ body {
 {
 	background-color: #050a14;
 }
+.navbar {
+    position: relative;
+    min-height: 0px;
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+		font-size: 15px;
+}
