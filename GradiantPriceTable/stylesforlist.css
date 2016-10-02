@@ -1,0 +1,70 @@
+.list-group
+{
+  margin: 0 auto;
+  max-width: 600px;
+}
+#list
+{
+  max-width: 377px;
+  max-height: 500px;
+  min-width: 20px;
+  min-height: 500px;
+  margin: 0 auto;
+  text-align: center;
+      background: #e97d68;
+    background: -webkit-linear-gradient( bottom , #e97d68, #e99b68);
+    background: linear-gradient(to top, #e97d68, #e99b68);
+    box-shadow: none;
+    /*
+background: #ff4b1f; 
+background: -webkit-linear-gradient(to left, #ff4b1f , #ff9068); 
+background: linear-gradient(to left, #ff4b1f , #ff9068); 
+        */
+}
+.cd-price
+{
+  font-size: 20px;
+}
+ .menu 
+ { 
+   text-align: center; 
+   
+ }
+ .list-group
+ {
+   font-size: 20px;
+ }
+ .cd-value
+ {
+   color: white;
+   font-size: 60px;
+ }
+ .cd-duration
+ {
+   color: rgb(255, 197, 182);
+ }
+ .cd-currency
+ {
+   padding-top: 50px;
+   font-size: 60px;
+   color: white;
+ }
+.list-group-item
+{
+  background-color: transparent;
+  font-weight: bold; 
+  border: none;
+}
+h2
+{
+  color: white;
+}
+.frontpage .btn-primary
+{
+  background-color: #0c1f28;
+  border-color: #0c1f28;
+}
+.frontpage .btn-primary:hover
+{
+     background: #215c77;
+}
