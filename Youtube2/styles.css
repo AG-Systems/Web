@@ -1,0 +1,110 @@
+body {
+  background-color: #f2f2f2;
+}
+
+#video {
+  background-color: black;
+  height: 450px;
+  width: 850px;
+}
+
+#title-panel {
+  background-color: white;
+  height: 100px;
+  width: 850px;
+}
+
+h4 {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  color: black;
+}
+
+#ratings {
+  float: right;
+  margin-top: -70px;
+}
+
+#blue-bar {
+  background-color: #00ffff;
+  height: 2px;
+  width: 90px;
+}
+
+#gray-bar {
+  background-color: #777571;
+  height: 2px;
+  width: 0px;
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+
+#ratings {
+  margin-bottom: 400px;
+}
+
+img {
+  margin-top: -70px;
+  margin-left: 20px;
+}
+
+#username {
+  margin-top: -50px;
+}
+
+button {
+  background-color: #f44842;
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+
+.share {
+  background-color: white;
+  height: 50px;
+  width: 850px;
+}
+
+#share-buttons {
+  margin-left: 25px;
+}
+
+#video-list {
+  height: 900px;
+  width: 400px;
+  background-color: white;
+  float: right;
+}
+
+.video-section {
+  float: left;
+}
+
+#desc {
+  height: 30px;
+  width: 850px;
+  background-color: white;
+}
+
+#info {
+  margin-left: 20px;
+}
+#comments
+{
+  width: 850px;
+  background-color: white;
+  height: 30px;
+}
+input
+{
+  width: 500px;
+  margin-left: 250px;
+}
