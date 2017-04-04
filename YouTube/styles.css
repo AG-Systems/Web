@@ -31,38 +31,60 @@ h4 {
   background-color: #00ffff;
   height: 2px;
   width: 90px;
+  display: inline;
 }
 
 #gray-bar {
   background-color: #777571;
   height: 2px;
-  width: 100px;
+  width: 10px;
+  /*display: inline;
+*/
 }
-ul
-{
+
+ul {
   display: inline;
 }
-li
-{
+
+li {
   display: inline;
 }
-#ratings
-{
-    margin-bottom: 400px;
+
+#ratings {
+  /* margin-bottom: 400px; */
+  margin-top: -30px;
+  margin-right: 20px;
 }
-img
-{
-margin-top: -70px;
-margin-left: 20px;
+
+img {
+  margin-top: -70px;
+  margin-left: 20px;
 }
-#username
-{
+
+#username {
   margin-top: -50px;
 }
-button
-{
+
+#sub {
   background-color: #f44842;
   border-radius: 4px;
   border: none;
   color: white;
+}
+
+#numofsubs {
+  background-color: white;
+  color: black;
+  border: 2px solid #d6d6d6;
+  opacity: 0.6;
+}
+
+.progress {
+  height: 2px;
+}
+
+#desc
+{
+  padding-top: 20px;
+  padding-right: 100px;
 }
